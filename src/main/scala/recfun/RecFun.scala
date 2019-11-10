@@ -2,12 +2,13 @@ package recfun
 
 import scala.annotation.tailrec
 
-object Main {
-  def main(args: Array[String]) {
+object RecFun extends RecFunInterface {
+
+  def main(args: Array[String]): Unit = {
     println("Pascal's Triangle")
     for (row <- 0 to 10) {
       for (col <- 0 to row)
-        print(pascal(col, row) + " ")
+        print(s"${pascal(col, row)} ")
       println()
     }
   }

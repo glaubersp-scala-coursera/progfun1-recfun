@@ -1,10 +1,9 @@
-course := "progfun1"
-assignment := "recfun"
+// Student tasks (i.e. submit, packageSubmission)
+enablePlugins(StudentTasks)
 
-assignmentInfo := AssignmentInfo(
+courseraId := ch.epfl.lamp.CourseraId(
   key = "SNYuDzZEEeWNVyIAC92BaQ",
-  itemId = "Yljln",
+  itemId = "LBd0s",
   premiumItemId = Some("Ey6Jf"),
-  partId = "PzVVY",
-  styleSheet = Some((_: File) / "scalastyle" / "scalastyle_config.xml")
+  partId = "PzVVY"
 )
